@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.almuwahhid:uilib-almuwahhid-1.0.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/uilib-almuwahhid-1.0.5.aar/3aa0e83d1b2745d44eeb8b1eb07b22a9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/uilib-almuwahhid-1.0.5.aar/3aa0e83d1b2745d44eeb8b1eb07b22a9/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.almuwahhid/uilib-almuwahhid/1.0.5/2aab7c1df7befcd766c74a30bb716970bed62784/uilib-almuwahhid-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

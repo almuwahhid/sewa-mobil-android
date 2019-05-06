@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey_200"
+    android:layout_height="match_parent"
+    tools:context=".menu.profile.ProfileActivity">
+    <include layout="@layout/toolbar_logo"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <!--Login-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    style="@style/StandardTextOneRow"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/img_chevron_login"
+                    android:padding="10dp"
+                    android:text="Profil"
+                    android:textColor="@color/grey_700"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/lay_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.CardView
+                        style="@style/clickable"
+                        android:id="@+id/card_login"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="1dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardElevation="0dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/txtLogin"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="10dp"
+                                style="@style/StandardTextOneRow"
+                                android:layout_toLeftOf="@+id/img_chevron_login"
+                                android:text="Login"
+                                android:textColor="@color/grey_600"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_mendaftar"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="1dp"
+                        style="@style/clickable"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardElevation="0dp"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="10dp"
+                                android:text="Register"
+                                style="@style/StandardTextOneRow"
+                                android:textColor="@color/grey_600"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lay_profil"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        style="@style/clickable"
+                        android:id="@+id/lay_biodata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="@color/white"
+                        android:padding="10dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:tint="@color/grey_400" />
+
+                        <TextView
+                            android:id="@+id/txtBiodata_logout"
+                            android:layout_width="match_parent"
+                            style="@style/StandardTextOneRow"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Biodata"
+                            android:textColor="@color/grey_600"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtSubBiodata_logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtBiodata_logout"
+                            android:layout_marginLeft="10dp"
+                            style="@style/SubtitleTextOneRow"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Informasi biodata pengguna"
+                            android:textColor="@color/grey_600" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/lay_bookinghistory"
+                        style="@style/clickable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="@color/white"
+                        android:padding="10dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:tint="@color/grey_400" />
+
+                        <TextView
+                            android:id="@+id/tv_booking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            style="@style/StandardTextOneRow"
+                            android:layout_marginRight="10dp"
+                            android:text="Booking History"
+                            android:textColor="@color/grey_600"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_booking"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            style="@style/SubtitleTextOneRow"
+                            android:text="Riwayat booking pengguna"
+                            android:textColor="@color/grey_600" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/lay_keluar"
+                        style="@style/clickable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:text="Logout"
+                            style="@style/StandardTextOneRow"
+                            android:textColor="@color/grey_600"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    style="@style/StandardTextOneRow"
+                    android:text="Lain - Lain"
+                    android:textColor="@color/grey_700"
+                    android:textStyle="bold" />
+                <RelativeLayout
+                    android:id="@+id/lay_aboutapp"
+                    style="@style/clickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="Tentang Aplikasi"
+                        style="@style/StandardTextOneRow"
+                        android:textColor="@color/grey_600"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

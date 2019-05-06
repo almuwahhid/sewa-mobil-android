@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_rent"
+        android:icon="@drawable/ic_directions_car_black_24dp"
+        android:title="Rental" />
+
+    <item
+        android:id="@+id/navigation_wisata"
+        android:icon="@drawable/ic_airport_shuttle_black_24dp"
+        android:title="Wisata" />
+
+    <item
+        android:id="@+id/navigation_profil"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Profil" />
+
+</menu>

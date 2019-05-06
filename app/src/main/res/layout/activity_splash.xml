@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.splashscreen.SplashActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_trans_black_bg">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_rent"
+        android:layout_width="@dimen/dimen_108dp"
+        android:layout_height="@dimen/dimen_108dp"
+        android:layout_above="@+id/lay_login"
+        android:layout_below="@+id/toolbar_transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo_rent" />
+     <TextView
+         android:textColor="@color/white"
+         android:textSize="@dimen/dimen_20dp"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="@dimen/dimen_10dp"
+         android:layout_below="@+id/img_rent"
+         style="@style/TitleTextOneRow"
+         android:text="RENTAL MOBIL"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textStyle="bold"
+         android:fontFamily="serif-monospace"/>
+</RelativeLayout>

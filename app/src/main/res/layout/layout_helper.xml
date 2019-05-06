@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/helper_login"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/dimen_108dp"
+            android:layout_height="@dimen/dimen_108dp"
+            android:src="@drawable/logo_rent"/>
+        <LinearLayout
+            android:id="@+id/lay_login"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            style="@style/BlackButtonStandardStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_24dp"
+                android:layout_marginRight="@dimen/dimen_24dp"
+                android:text="Login"
+                style="@style/StandardTextOneRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/helper_loading"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_width="@dimen/dimen_108dp"
+                android:layout_height="@dimen/dimen_108dp" />
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:src="@drawable/logo_rent"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Tunggu..."
+            style="@style/StandardTextOneRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/helper_empty"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:tint="@color/grey_300"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dimen_108dp"
+                android:layout_height="@dimen/dimen_108dp"
+                android:src="@drawable/logo_rent"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Sayang sekali, data kosong"
+            style="@style/StandardTextOneRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/helper_error"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:tint="@color/grey_300"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dimen_108dp"
+                android:layout_height="@dimen/dimen_108dp"
+                android:src="@drawable/logo_rent"/>
+            <ImageView
+                android:tint="@color/red_500"
+                android:layout_marginTop="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:src="@drawable/ic_error_black_24dp"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Bermasalah dengan server"
+            style="@style/StandardTextOneRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

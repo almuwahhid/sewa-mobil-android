@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardElevation="@dimen/dimen_1dp"
+    app:cardCornerRadius="@dimen/dimen_4dp"
+    android:layout_margin="@dimen/dimen_5dp"
+    android:layout_height="wrap_content"
+    tools:context=".menu.rentcar.RentCarAdapter">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_140dp">
+
+            <ImageView
+                android:id="@+id/img_rent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_140dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg">
+            </ImageView>
+            <ProgressBar
+                android:id="@+id/pb"
+                android:visibility="gone"
+                android:layout_width="@dimen/dimen_48dp"
+                android:layout_height="@dimen/dimen_48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_jenis"
+                android:text="Mobil"
+                style="@style/SubtitleTextOneRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:textColor="@color/grey_800"
+                android:text="New Avanza 2013 "
+                style="@style/StandardTextOneRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginTop="@dimen/dimen_4dp"
+                android:text="Rp. 500.000"
+                style="@style/TitleTextOneRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lay_book"
+                android:layout_margin="@dimen/dimen_10dp"
+                style="@style/BlackButtonStandardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Book Now"
+                    style="@style/StandardTextOneRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="11dp"
+                android:gravity="center"
+                android:padding="@dimen/dimen_14dp"
+                android:id="@+id/lay_empty"
+                android:background="@color/grey_300"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="Tidak Tersedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
